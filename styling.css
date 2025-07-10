@@ -1,0 +1,229 @@
+/* === GLOBAL RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #0e6b0e;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+                 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 20px;
+}
+
+/* === HEADER & NAVIGATION === */
+header nav,
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 3px solid #0e6b0e;
+}
+
+header h1,
+nav h1 {
+    font-size: 1.5rem;
+}
+
+header a,
+nav a {
+    text-decoration: none;
+    color: #0e6b0e;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header a:hover,
+nav a:hover {
+    color: #a8ff60;
+    text-shadow: 0 0 6px #a8ff60;
+}
+
+/* === LOGO / BRANDED HOME LINK === */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === MAIN CONTAINER (used for all sections) === */
+.content-box {
+    background-color: black;
+    border: 3px solid #0e6b0e;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.content-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px #0e6b0e88;
+}
+
+/* === HEADINGS === */
+.content-box h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-box h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-box h3 {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+/* === PARAGRAPH === */
+.content-box p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* === LINKS === */
+a {
+    color: #0e6b0e;
+    text-decoration: underline;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #a8ff60;
+    text-shadow: 0 0 6px #a8ff60;
+}
+
+/* === UNORDERED LISTS === */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* === FORMS === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #0e6b0e;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #0e6b0e;
+    background-color: black;
+    resize: vertical;
+    text-align: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #33aa33;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a8ff60;
+    box-shadow: 0 0 5px #a8ff60;
+}
+
+/* === SUBMIT BUTTON === */
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0e6b0e;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #a8ff60;
+    color: black;
+}
+
+/* === IMAGE PLACEHOLDER (for future expansion) === */
+.project-image {
+    max-width: 100%;
+    border: 2px solid #0e6b0e;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* === ACCORDION / EXPANDABLE SECTIONS (future ready) === */
+.toggle-box {
+    border: 2px dashed #0e6b0e;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.toggle-box:hover {
+    background-color: #0e6b0e22;
+}
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 700px) {
+    header,
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content-box {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 95%;
+    }
+
+    .content-box h1 {
+        font-size: 1.6rem;
+    }
+
+    .content-box h2 {
+        font-size: 1.3rem;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 0.95rem;
+    }
+}
+

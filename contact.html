@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styling.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Christian Rafferty – showcasing projects in Python, HTML, CSS, and more." />
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Home</a></h1>
+        <h1><a href="contact.html">Contact</a></h1>
+        <h1><a href="about.html">About</a></h1>
+        <h1><a href="projects.html">Projects</a></h1>
+    </header>
+
+    <div class="content-box">
+        <h1>Ways to Contact:</h1>
+        <ul>
+            <li>Email:
+                <ul>
+                    <br>
+                    <li>cfr081709@gmail.com</li>
+                    <li>crafferty@nerdhero24.com</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <form action="https://formspree.io/f/xvgrerko" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type message here"></textarea>
+
+            <button type="submit">Submit</button>
+
+            <input type="hidden" name="_next" value="thankyou.html" />
+        </form>
+    </div>
+</body>
+</html>
